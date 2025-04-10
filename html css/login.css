@@ -1,0 +1,116 @@
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 139, 0.8), rgba(255, 255, 255, 1));
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.overskrift {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff; /* Holder hvit tekst */
+    margin-top: 20px; /* Sjekk at det er plass til overskriften */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Legger til skygge for bedre synlighet på lys bakgrunn */
+}
+
+.tekst2 {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(102, 0, 255);
+    color: white;
+    font-size: 1.2rem;
+    width: 80%;
+    max-width: 600px;
+}
+
+.skjema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.svskrift,
+.apskrift,
+.spskrift {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.resultater {
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+}
+
+input, button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus {
+    border-color: #00008B;
+    background-color: #e0e0e0;
+}
+
+button {
+    background-color: #00008B;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1E3A8A;
+}
+
+.voting-bar {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  top: -30px; /* Juster posisjonen til å vises over baren */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.voting-bar:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+    
